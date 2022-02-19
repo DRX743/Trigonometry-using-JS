@@ -96,3 +96,9 @@ const draw = () => {
 window.addEventListener('resize', () => {
 	resizeCanvas()
 })
+
+/* Initial canvas background */
+ctx.fillStyle = 'rgba(8, 8, 13, 1)'
+ctx.fillRect(0, 0, canvas.width, canvas.height)
+
+draw()
