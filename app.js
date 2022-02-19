@@ -4,3 +4,19 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
 
+// Getting he canvas size
+const canvasSize = () => {
+	return {
+		width: window.innerWidth * window.devicePixelRatio,
+		height: window.innerHeight * window.devicePixelRatio
+	}
+} 
+
+// Resizing the canvas Size
+const resizeCanvas = () => {
+	const { width, height } = canvasSize()
+	canvas.width = width
+	canvas.height = height
+}
+
+resizeCanvas()
